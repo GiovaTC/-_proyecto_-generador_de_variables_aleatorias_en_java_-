@@ -1,40 +1,37 @@
 # -_proyecto_-generador_de_variables_aleatorias_en_java_- :.
 
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/9ffba1af-e68d-4da6-a8fb-276c3b7ee5cd" />  
-```
 
-📊 Proyecto Java:
+## 📊 Proyecto Java:
 Generador de Variables Aleatorias con GUI + Excel 
 
 Proyecto académico que implementa un generador de variables aleatorias utilizando diferentes distribuciones de probabilidad, con una interfaz gráfica en Swing y exportación de resultados a Excel (.xlsx).
 
-✔ Interfaz gráfica con Swing
-✔ Generación de variables aleatorias
-✔ Distribuciones:
+- ✔ Interfaz gráfica con Swing
+- ✔ Generación de variables aleatorias
+- ✔ Distribuciones:
 
-Uniforme
+- Uniforme
+- Normal (Gaussiana)
+- Binomial
+- Poisson
 
-Normal (Gaussiana)
-
-Binomial
-
-Poisson
-
-✔ Tabla de resultados
-✔ Exportación de resultados a Excel (.xlsx)
+- ✔ Tabla de resultados
+- ✔ Exportación de resultados a Excel (.xlsx)
 
 Este tipo de proyecto es ampliamente utilizado en simulación estadística y probabilidad aplicada.
 
-🧰 Tecnologías Utilizadas
+🧰 Tecnologias Utilizadas:
 
-Java 17 / Java 21
+- Java 17 / Java 21
 
-Swing (Interfaz gráfica)
+- Swing (Interfaz gráfica)
 
-Apache POI (Exportación a Excel)
+- Apache POI (Exportación a Excel)
 
-IntelliJ IDEA
-
+- IntelliJ IDEA
+- 
+```
 📁 Estructura del Proyecto
 src
  ├── model
@@ -48,12 +45,13 @@ src
  │
  └── ui
        RandomGeneratorGUI.java
+```
 
-1️⃣ Modelo
+1️⃣ Modelo:
 RandomResult.java
 
 Clase modelo que representa el resultado de una variable aleatoria generada.
-
+```
 package model;
 
 public class RandomResult {
@@ -73,13 +71,13 @@ public class RandomResult {
     public double getValue() {
         return value;
     }
+```
 
-
-2️⃣ Servicio de Distribuciones
+2️⃣ Servicio de Distribuciones:
 RandomDistributionService.java
 
 Clase encargada de generar números aleatorios según diferentes distribuciones de probabilidad.
-
+```
 package service;
 
 import java.util.Random;
@@ -123,21 +121,23 @@ public class RandomDistributionService {
         return k - 1;
     }
 }
+```
 
-3️⃣ Exportar Resultados a Excel
+3️⃣ Exportar Resultados a Excel:
 
 Para exportar los resultados se utiliza la librería Apache POI.
-
+```
 Dependencia Maven
 <dependency>
  <groupId>org.apache.poi</groupId>
  <artifactId>poi-ooxml</artifactId>
  <version>5.2.5</version>
 </dependency>
+```
 ExcelExporter.java
 
 Clase encargada de exportar los resultados generados a un archivo Excel (.xlsx).
-
+```
 package util;
 
 import model.RandomResult;
@@ -183,12 +183,13 @@ public class ExcelExporter {
         }
     }
 }
+```
 
-4️⃣ Interfaz Gráfica Swing
+4️⃣ Interfaz Gráfica Swing:
 RandomGeneratorGUI.java
 
 Implementa la interfaz gráfica que permite seleccionar la distribución, ingresar parámetros y visualizar los resultados.
-
+```
 package ui;
 
 import model.RandomResult;
@@ -301,19 +302,21 @@ public class RandomGeneratorGUI extends JFrame {
         });
     }
 }
-🖥 Resultado Visual Esperado
+```
 
-La interfaz tendrá:
+🖥 Resultado Visual Esperado:
 
-Selector de distribución
+- La interfaz tendrá:
 
-Campos para parámetros
+- Selector de distribución
 
-Botón Generar
+- Campos para parámetros
 
-Tabla de resultados
+- Botón Generar
 
-Botón Exportar Excel
+- Tabla de resultados
+
+- Botón Exportar Excel
 
 +--------------------------------------------------+
 | Distribucion  [Normal ▼]  Param1  Param2  Generar |
@@ -325,7 +328,7 @@ Botón Exportar Excel
 | Uniforme     | 7.82                               |
 +--------------------------------------------------+
                  [Exportar Excel]
-📈 Aplicaciones de este Programa
+📈 Aplicaciones de este Programa:
 
 Este generador permite simular distintos fenómenos probabilísticos:
 
@@ -343,4 +346,4 @@ Distribución Poisson
 
 🌎 Fenómenos naturales
 
-Distribución Normal / .
+Distribución Normal / . 
