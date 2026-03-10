@@ -317,7 +317,8 @@ public class RandomGeneratorGUI extends JFrame {
 - Tabla de resultados
 
 - Botón Exportar Excel
-
+  
+```
 +--------------------------------------------------+
 | Distribucion  [Normal ▼]  Param1  Param2  Generar |
 |--------------------------------------------------|
@@ -328,6 +329,8 @@ public class RandomGeneratorGUI extends JFrame {
 | Uniforme     | 7.82                               |
 +--------------------------------------------------+
                  [Exportar Excel]
+```
+                 
 📈 Aplicaciones de este Programa:
 
 Este generador permite simular distintos fenómenos probabilísticos:
