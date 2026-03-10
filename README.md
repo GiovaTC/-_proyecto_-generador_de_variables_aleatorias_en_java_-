@@ -30,7 +30,7 @@ Este tipo de proyecto es ampliamente utilizado en simulación estadística y pro
 - Apache POI (Exportación a Excel)
 
 - IntelliJ IDEA
-- 
+
 ```
 📁 Estructura del Proyecto
 src
