@@ -7,17 +7,17 @@ Generador de Variables Aleatorias con GUI + Excel
 
 Proyecto académico que implementa un generador de variables aleatorias utilizando diferentes distribuciones de probabilidad, con una interfaz gráfica en Swing y exportación de resultados a Excel (.xlsx).
 
-- ✔ Interfaz gráfica con Swing
-- ✔ Generación de variables aleatorias
-- ✔ Distribuciones:
+✔ Interfaz gráfica con Swing
+✔ Generación de variables aleatorias
+✔ Distribuciones:
 
 - Uniforme
 - Normal (Gaussiana)
 - Binomial
 - Poisson
 
-- ✔ Tabla de resultados
-- ✔ Exportación de resultados a Excel (.xlsx)
+✔ Tabla de resultados
+✔ Exportación de resultados a Excel (.xlsx)
 
 Este tipo de proyecto es ampliamente utilizado en simulación estadística y probabilidad aplicada.
 
